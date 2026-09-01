@@ -1,0 +1,40 @@
+# NIDS detection rules
+# Tune these thresholds to your environment's normal traffic baseline to
+# reduce false positives before deploying anywhere near production.
+
+thresholds:
+  # Port scan: N distinct destination ports from one source within the window
+  port_scan_window_seconds: 10
+  port_scan_unique_ports_threshold: 15
+
+  # SYN flood: N bare-SYN packets from one source within the window
+  syn_flood_window_seconds: 5
+  syn_flood_threshold: 100
+
+  # ICMP flood: N echo requests from one source within the window
+  icmp_flood_window_seconds: 5
+  icmp_flood_threshold: 50
+
+# Known-malicious / known-bad source IPs to always flag.
+# (These are RFC 5737 documentation-range example addresses.)
+blacklist_ips:
+  - 198.51.100.23
+  - 203.0.113.100
+
+# Plaintext payload signatures. Severity: LOW | MEDIUM | HIGH | CRITICAL
+signatures:
+  - name: cleartext_ftp_credentials
+    pattern: "USER\\s+\\S+\\r?\\nPASS\\s+\\S+"
+    severity: HIGH
+
+  - name: cleartext_http_basic_auth
+    pattern: "Authorization:\\s*Basic\\s+[A-Za-z0-9+/=]+"
+    severity: MEDIUM
+
+  - name: sql_injection_attempt
+    pattern: "(\\bUNION\\b.*\\bSELECT\\b|\\bOR\\b\\s+1=1|--\\s*$)"
+    severity: HIGH
+
+  - name: suspicious_reverse_shell_string
+    pattern: "(nc\\s+-e\\s+/bin/sh|/bin/bash\\s+-i)"
+    severity: CRITICAL
