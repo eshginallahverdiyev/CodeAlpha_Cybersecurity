@@ -111,12 +111,10 @@ python -m nids.main --demo
 
 **CodeAlpha** is a software development company offering internships that provide hands-on experience in modern tech domains. The Cyber Security track covers:
 
-- Network security fundamentals
-- Ethical hacking basics
+- Network security 
+- Ethical hacking 
 - Encryption & data protection
 - Threat detection & risk assessment
-
-**Internship perks:** Offer Letter · QR-Verified Completion Certificate · Unique ID Certificate · Letter of Recommendation · Job/Placement Support · Resume Building Support.
 
 ---
 
