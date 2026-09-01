@@ -1,0 +1,60 @@
+Run started:2026-09-01 09:27:53.064529+00:00
+
+Test results:
+>> Issue: [B105:hardcoded_password_string] Possible hardcoded password: 'supersecret123'
+   Severity: Low   Confidence: Medium
+   CWE: CWE-259 (https://cwe.mitre.org/data/definitions/259.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b105_hardcoded_password_string.html
+   Location: ./vulnerable_app/app.py:21:17
+20	# --- FINDING SC-04: Hardcoded secret key -----------------------------------
+21	app.secret_key = "supersecret123"
+22	
+
+--------------------------------------------------
+>> Issue: [B608:hardcoded_sql_expressions] Possible SQL injection vector through string-based query construction.
+   Severity: Medium   Confidence: Low
+   CWE: CWE-89 (https://cwe.mitre.org/data/definitions/89.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b608_hardcoded_sql_expressions.html
+   Location: ./vulnerable_app/app.py:63:12
+62	        query = (
+63	            "SELECT * FROM users WHERE username = '"
+64	            + username
+65	            + "' AND password = '"
+
+--------------------------------------------------
+>> Issue: [B201:flask_debug_true] A Flask app appears to be run with debug=True, which exposes the Werkzeug debugger and allows the execution of arbitrary code.
+   Severity: High   Confidence: Medium
+   CWE: CWE-94 (https://cwe.mitre.org/data/definitions/94.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b201_flask_debug_true.html
+   Location: ./vulnerable_app/app.py:129:4
+128	    # --- FINDING SC-07: Debug mode enabled -> remote code execution risk --
+129	    app.run(debug=True, host="0.0.0.0")
+
+--------------------------------------------------
+>> Issue: [B104:hardcoded_bind_all_interfaces] Possible binding to all interfaces.
+   Severity: Medium   Confidence: Medium
+   CWE: CWE-605 (https://cwe.mitre.org/data/definitions/605.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b104_hardcoded_bind_all_interfaces.html
+   Location: ./vulnerable_app/app.py:129:29
+128	    # --- FINDING SC-07: Debug mode enabled -> remote code execution risk --
+129	    app.run(debug=True, host="0.0.0.0")
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 96
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 1
+		Medium: 2
+		High: 1
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 1
+		Medium: 3
+		High: 0
+Files skipped (0):
