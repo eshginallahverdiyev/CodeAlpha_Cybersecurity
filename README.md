@@ -68,7 +68,7 @@ CodeAlpha_CyberSecurity/
 Clone the repository and open any task folder to see its own setup and usage instructions:
 
 ```bash
-git clone https://github.com/<your-username>/CodeAlpha_CyberSecurity.git
+git clone https://github.com/eshginallahverdiyev/CodeAlpha_CyberSecurity.git
 cd CodeAlpha_CyberSecurity/Task_1_Network_Sniffer
 ```
 
