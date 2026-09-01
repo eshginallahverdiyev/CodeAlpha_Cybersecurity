@@ -1,8 +1,6 @@
 <div align="center">
 
-# 🛡️ CodeAlpha — Cyber Security Internship
-
-### Hands-on projects completed during the CodeAlpha Cyber Security Internship
+### Hands-on projects completed during Cyber Security Internship
 
 [![Internship](https://img.shields.io/badge/Internship-CodeAlpha-blueviolet)](https://www.codealpha.tech)
 [![Domain](https://img.shields.io/badge/Domain-Cyber%20Security-critical)]()
@@ -16,7 +14,7 @@
 
 ## 📖 About
 
-This repository contains all the tasks I completed as part of the **CodeAlpha Cyber Security Internship**. The internship focuses on core cybersecurity skills — network security, ethical hacking, encryption, and threat detection — through practical, real-world projects built under expert mentorship.
+This repository contains all the tasks I completed as part of the **Cyber Security Internship**. The internship focuses on core cybersecurity skills — network security, ethical hacking, encryption, and threat detection — through practical, real-world projects built under expert mentorship.
 
 Each task lives in its own folder with its own source code, documentation, and (where relevant) tests and sample output, so it can be explored independently.
 
@@ -48,7 +46,7 @@ Each task lives in its own folder with its own source code, documentation, and (
 ## 📁 Repository Structure
 
 ```
-CodeAlpha_Cybersecurity/
+Internship_Tasks/
 ├── Task_1_Network_Sniffer/
 │   ├── sniffer.py
 │   ├── requirements.txt
@@ -86,8 +84,8 @@ CodeAlpha_Cybersecurity/
 Clone the repository and open any task folder to see its own setup and usage instructions:
 
 ```bash
-git clone https://github.com/eshginallahverdiyev/CodeAlpha_Cybersecurity.git
-cd CodeAlpha_Cybersecurity
+git clone https://github.com/eshginallahverdiyev/Internship_Tasks.git
+cd Internship_Tasks
 ```
 
 Each task folder is self-contained — its own `README.md` covers installation, how to run it, and what it demonstrates. A few highlights:
@@ -104,18 +102,6 @@ cd Task_4_Network_Intrusion_Detection_System
 pip install -r requirements.txt
 python -m nids.main --demo
 ```
-
----
-
-## 🎓 About the Internship
-
-**CodeAlpha** is a software development company offering internships that provide hands-on experience in modern tech domains. The Cyber Security track covers:
-
-- Network security 
-- Ethical hacking 
-- Encryption & data protection
-- Threat detection & risk assessment
-
 ---
 
 ## ⚖️ Disclaimer
@@ -131,7 +117,5 @@ This repository is licensed under the [MIT License](LICENSE).
 ---
 
 <div align="center">
-
-Made with 💻 and ☕ during the **CodeAlpha Cyber Security Internship**
 
 </div>
