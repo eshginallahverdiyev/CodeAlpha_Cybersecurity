@@ -1,0 +1,7 @@
+# NIDS runtime configuration
+
+rules_path: rules/rules.yaml
+log_path: logs/alerts.log
+
+# Default network interface for live capture (overridden by --iface)
+default_interface: eth0
