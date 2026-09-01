@@ -1,6 +1,5 @@
 # 🔍 Task 3 — Secure Coding Review
 
-**CodeAlpha Cyber Security Internship**
 
 A manual security code review of a small demo web application
 ("**VulnBank**"), performed to identify common vulnerability classes
@@ -75,5 +74,3 @@ python app.py
 - Using static analysis tooling to validate manual findings
 
 ---
-
-*Part of the [CodeAlpha Cyber Security Internship](../README.md).*
