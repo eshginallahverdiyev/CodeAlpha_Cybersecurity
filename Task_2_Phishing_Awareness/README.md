@@ -1,7 +1,5 @@
 # 🎣 Task 2 — Phishing Awareness Training
 
-Part of the **[CodeAlpha Cyber Security Internship](../README.md)**.
-
 An educational presentation and reference kit designed to teach employees, students, or teams how to **recognize, avoid, and report phishing attacks** — one of the most common and effective attack vectors in cybersecurity today.
 
 ---
