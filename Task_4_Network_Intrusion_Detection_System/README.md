@@ -1,6 +1,5 @@
 # 🚨 Task 4 — Network Intrusion Detection System (NIDS)
 
-**CodeAlpha Cyber Security Internship**
 
 A lightweight, rule-based Network Intrusion Detection System written in
 Python. It sniffs live traffic (or replays a `.pcap`), evaluates every
@@ -141,5 +140,3 @@ organizational policy.
 - pytest — automated testing
 
 ---
-
-*Part of the [CodeAlpha Cyber Security Internship](../README.md).*
