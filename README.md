@@ -2,7 +2,6 @@
 
 ### Hands-on projects completed during Cyber Security Internship
 
-[![Internship](https://img.shields.io/badge/Internship-CodeAlpha-blueviolet)](https://www.codealpha.tech)
 [![Domain](https://img.shields.io/badge/Domain-Cyber%20Security-critical)]()
 [![Status](https://img.shields.io/badge/Status-Completed-brightgreen)]()
 [![Tasks](https://img.shields.io/badge/Tasks-4%2F4%20Done-success)]()
